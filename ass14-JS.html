@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+var TotalMarks = 300;
+var MarksObtained = Number(prompt(`Enter Your Marks Obtained`));
+var Percentage = MarksObtained / TotalMarks *100;
+var Grade = " "
+var Remarks = " "
+
+document.write(`<h1> Marks Sheet </h1> <br> <br> `);
+document.write(`Total Marks : ` + TotalMarks );
+document.write(`<br>Marks Obtained : ` + MarksObtained );
+document.write(`<br>Percentage : ` + Percentage );
+
+if (Percentage >=80) {
+    Grade = "A-One"
+}
+
+else if (Percentage >=70) {
+    Grade = "A"
+}
+
+else if (Percentage >=60) {
+    Grade = "B"
+}
+
+if (Percentage < 60) {
+    Grade = "Fail"
+}
+ 
+document.write(`<br> Grade: ` + Grade)
+
+if (Percentage >=80) {
+    Remarks = "Excellent"
+}
+
+else if (Percentage >=70) {
+    Remarks = "Good"
+}
+
+else if (Percentage >=60) {
+    Remarks = "You need to improve"
+}
+
+if (Percentage < 60) {
+    Remarks = "Sorry"
+}
+ 
+document.write(`<br> Remarks: ` + Remarks)
+
+</script>
+</html>
